@@ -10,12 +10,12 @@ body{
   margin: auto;
 }
 
-header img{height: 18px;}
-.logo{transform:translateY(3px)}
+header img{height: 16px;}
+.logo{transform:translateY(5px)}
 header{border: 1px solid #000;}
 
 .gnb{
-  height: 70px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,7 @@ header{border: 1px solid #000;}
   font-size: 17px;
 }
 
-.r-gnb li{margin-right: 15px;}
+.r-gnb li{margin-right: 13px;}
 .r-gnb li:last-child{margin-right: 15px;}
 
 
