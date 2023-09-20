@@ -11,7 +11,6 @@ body{color: #333;}
 
 header img{height: 16px;}
 .logo{transform:translateY(5px)}
-header{border: 1px solid #000;}
 
 .gnb{
   height: 60px;
@@ -19,6 +18,7 @@ header{border: 1px solid #000;}
   justify-content: center;
   align-items: center;
   position: relative;
+  border-bottom: 1px solid #ccc;
 }
 
 .r-gnb{
@@ -30,7 +30,7 @@ header{border: 1px solid #000;}
   font-size: 17px;
 }
 
-.r-gnb li{margin-right: 13px;}
+.r-gnb li{margin-right: 20px;}
 .r-gnb li:last-child{margin-right: 15px;}
 
 
@@ -60,29 +60,20 @@ header{border: 1px solid #000;}
 }
 .trigger span:nth-child(3){top: 100%;}
 
-/* main ---------------------------------------  */
-main img{width: 100%;}
-
-main{position: relative;}
-
-main>p{
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  color: #fff;
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
-main > p b{
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  height: 90%;
 }
-main > p em, main > p span{
-  display: block;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom: 10%;}
+.swiper-pagination-bullet-active{background: #0000C5;}
 
 /* Section -------------------------------- */
 section{margin: auto;}
@@ -92,6 +83,7 @@ section{margin: auto;}
   height: 400px;
   overflow: hidden;
   position: relative;
+  top: -50px;
   background: url(../image/main02.png) no-repeat;
   background-position-x: calc(100% - 15px);
   background-position-y: 20px;
@@ -106,7 +98,7 @@ section{margin: auto;}
 .section1 .model img{height: 600px;}
 .section1 > div > p{
   position: absolute;
-  top: 60%;
+  top: 38%;
   left: 5%;
 }
 .section1 > div > p b{
@@ -115,7 +107,7 @@ section{margin: auto;}
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 24px;
-  color: #636363;
+  color: #222;
   margin-bottom: 20px;
 }
 .section1 > div > p a{
@@ -129,7 +121,7 @@ section{margin: auto;}
   height: 300px;
   background: url(../image/main03.png) no-repeat;
   background-color: #dedede;
-  background-position-x: 15px;
+  background-position-x: -15px;
   background-position-y: 20px;
   position: relative;
 }
@@ -141,7 +133,7 @@ section{margin: auto;}
 }
 .section2 > div > p{
   position: absolute;
-  top: 60%;
+  top: 38%;
   left: auto;
   right: 5%;
   text-align: right;

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADERERROR | 아더에러 공식 온라인 스토어</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,14 +28,30 @@
     </header>
   
     <main>
-      <div class="visual">
+      <!-- <div class="visual">
         <img src="image/main01.jpg" alt="23FW main campaign 제품보기">
       </div>
       <p>
         <b>What's News</b>
         <em>23FW Main Campaign</em>
         <span>제품 바로 보기 &gt;</span>
-      </p>
+      </p> -->
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(image/main01.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(image/main02.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(image/main03.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(image/main04.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(image/main05.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(image/main06.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(image/main07.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(image/main08.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(image/main09.jpg)"></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+      </div>
     </main>
   
     <section>
@@ -45,9 +62,6 @@
             <a href="#none">제품 바로 보기 &gt;</a>
           </p>
         </div>
-        <!-- <div class="model">
-          <img src="image/main02.png" alt="New Collection">
-        </div> -->
       </div>
 
       <div class="section1 section2">
@@ -57,9 +71,6 @@
             <a href="#none">제품 바로 보기 &gt;</a>
           </p>
         </div>
-        <!-- <div class="model">
-          <img src="image/main03.png" alt="Significant Collection">
-        </div> -->
       </div>
 
       <div class="section-sort">
@@ -128,5 +139,22 @@
   <script src="js/jquery-3.7.0.min.js"></script>
   <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+    </script>
 </body>
 </html>
