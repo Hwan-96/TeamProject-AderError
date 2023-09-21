@@ -1,0 +1,70 @@
+*{box-sizing: border-box;}
+
+header img{height: 16px;}
+.logo{transform:translateY(5px)}
+
+.gnb{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.r-gnb{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  right: 0;
+  font-size: 17px;
+}
+
+.r-gnb li{margin-right: 20px;}
+.r-gnb li:last-child{margin-right: 15px;}
+
+
+.trigger{
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 14px;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.trigger span{
+  height: 2px;
+  border-radius: 5px;
+  background-color: #333;
+  position: absolute;
+  width: 100%;
+  transition: 0.35s;
+}
+
+.trigger span:nth-child(1){top: 0;}
+.trigger span:nth-child(2){
+  top: 50%;
+  width: 70%;
+}
+.trigger span:nth-child(3){top: 100%;}
+
+.nowPos{
+  padding-left: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.nowPos a .material-symbols-outlined{
+  font-size: 28px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nowPos a span:last-child{
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  vertical-align: middle;
+}
