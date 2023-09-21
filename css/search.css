@@ -7,7 +7,6 @@ body{color: #333;}
 
 #wrap{
   width: 100%;
-  height: 100vh;
   margin: auto;
 }
 
@@ -15,7 +14,6 @@ body{color: #333;}
 
 Section{
   width: 100%;
-  height: calc(100vh - 105px);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -49,7 +47,7 @@ Section{
 
 .keyword{
   width: 80%;
-  margin: auto;
+  margin: 50px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,12 +56,19 @@ Section{
 .keyword li{
   border: 1px solid #6969cc;
   padding: 2px 8px;
-  margin: 0px 5px 5px;
+  margin: 0px 5px 10px;
   transition: 0.35s;
+  font-size: 0.8rem;
 }
-.keyword li:hover{
+.keyword li.selected{
   background-color: #0101C8;
   color: #fff;
+}
+
+/* 실시간 인기상품 */
+.swiper-container h3{
+  margin-bottom: 15px;
+  margin-left: 15px;
 }
 
 .liveHit{
@@ -80,7 +85,7 @@ Section{
 
 .swiper-container {
   width: 100%;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 .swiper-slide{
   width: 42%;
@@ -104,13 +109,21 @@ Section{
 }
 
 .swiper-slide p{
-  font-size: 0.938rem;
+  font-size: 0.8rem;
   text-align: center;
   text-wrap: nowrap;
+  margin-top: 7px;
 }
 .swiper-slide p strong{display: block;}
 
 .soldOut{
   color: red;
   text-decoration: line-through;
+}
+
+#smallLogo img{
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
 }
