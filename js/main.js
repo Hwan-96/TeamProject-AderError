@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+  /* 헤더 메뉴 */
+  $(".trigger").click(function(){
+    $(this).toggleClass("active");
+    $("#mo-header").slideToggle();
+  });
+
   /* 푸터 아코디언 */
   $(".fTitle").click(function(){
 
@@ -26,27 +32,27 @@ $(document).ready(function(){
     }else{
       $(".house__contents-title").removeClass('scroll');
     };
-    if(pos>2700){
+    if(pos>3400){
       $(".ctitle2").addClass('scroll');
     }else{
       $(".ctitle2").removeClass('scroll');
     };
-    if(pos>5200){
+    if(pos>7400){
       $(".ctitle3").addClass('scroll');
     }else{
       $(".ctitle3").removeClass('scroll');
     };
-    if(pos>7750){
+    if(pos>11300){
       $(".ctitle4").addClass('scroll');
     }else{
       $(".ctitle4").removeClass('scroll');
     };
-    if(pos>10400){
+    if(pos>15000){
       $(".ctitle5").addClass('scroll');
     }else{
       $(".ctitle5").removeClass('scroll');
     };
-    if(pos>12600){
+    if(pos>18000){
       $(".ctitle6").addClass('scroll');
     }else{
       $(".ctitle6").removeClass('scroll');
