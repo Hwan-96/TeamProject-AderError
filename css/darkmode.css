@@ -1,0 +1,91 @@
+.switch{
+  display: flex;
+  width: 4rem;
+  padding: .3rem;
+  border-radius: 50px;
+  background-color: #1c4e9f;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.btn-toggle{
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #ddd;
+  transition: 0.1s;
+}
+
+.dark-mode{
+  background-color: #222;
+  color: #ddd;
+}
+.dark-mode .switch{
+  background-color: rgba(255,255,255,0.1);
+}
+
+.dark-mode .btn-toggle{
+  transform: translateX(28px);
+}
+
+.dark-mode .trigger span{
+  background-color: #ddd;
+}
+
+.dark-mode .gnb{
+  background-color: #222;
+  border-bottom: 1px solid #555;
+}
+.dark-mode .logo img{
+  filter: invert(100%);
+}
+.dark-mode .mo-gnb img{
+  filter: invert(100%);
+}
+
+.dark-mode .swiper-pagination-bullet{
+  background-color: #ddd;
+  opacity: 0.4;
+}
+.dark-mode .swiper-pagination-bullet-active{
+  background-color: royalblue;
+  opacity: 1;
+}
+.dark-mode .section1{
+  background-color: #222;
+}
+
+.dark-mode .section2{
+  background-color: #161616;
+}
+
+.dark-mode .section1 > div > p b{
+  color: #ddd;
+}
+
+.dark-mode .section-sort-inner{
+  background-color: #333;
+}
+.dark-mode .section-sort-inner p b{
+  color: #ddd;
+}
+
+.dark-mode .accordion .fTitle{
+  background-color: #ddd;
+  color: #333;
+}
+
+.dark-mode .accordion .fTitle.active{
+  border-color: #333;
+}
+
+/* Gallery */
+.dark-mode .progress{
+  background-color: #555;
+}
+
+.dark-mode .containerWall_Right{
+  background: #333;
+}
+.dark-mode .containerWall_Left{
+  background: #333;
+}

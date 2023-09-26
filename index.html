@@ -6,6 +6,7 @@
   <title>ADERERROR | 아더에러 공식 온라인 스토어</title>
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/darkmode.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -24,7 +25,7 @@
           <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
           <li><a href="#none"><i class="fa-regular fa-user"></i></a></li>
         </ul>
-        <div id="mo-header">
+        <div class="mo-header">
           <div class="moAll">
             <ul class="mo-gnb">
               <img class="moLogo" src="image/logo.svg" alt="">
@@ -43,6 +44,9 @@
             <ul class="utillMenu">
               <li><a href="#none">My Page</a></li>
               <li><a href="#none">Wish List</a></li>
+              <li class="switch">
+                <span class="btn-toggle" onclick="darkMode()"></span>
+              </li>
             </ul>
           </div>
         </div>
@@ -148,10 +152,11 @@
       </div>
     </footer>
   </div>
-
+  
   <script src="js/jquery-3.7.0.min.js"></script>
   <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
   <script src="js/swiper.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
