@@ -1,0 +1,130 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+.wrap{
+  width:100%;
+  display: flex;
+  background:rgb(255, 255, 255);
+  position: relative;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* 메인 */
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  /* border: 1px solid #000; */
+}
+
+.fadeshow{
+  position: relative;
+}
+
+.changeimg ul li{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.changeimg{
+  max-width: 1145px;
+  width: 95%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+.changeimg ul li{display: none;}
+.changeimg ul li:first-child{display: block;}
+.changeimg ul li img{width: 100%;}
+
+
+
+
+.new{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  /* border: 1px solid #000; */
+}
+
+.product{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin:auto;
+  position: relative;
+}
+
+.product img:first-child{
+  width: 100%;
+}
+.product img:last-child{  /* 하트 */
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 20px;
+}
+
+/* .product:after{
+  content: "";
+  z-index: 1;
+  position: absolute;
+  background-image: url(../image/fillheart.png);
+  background-size: 27px 22px;
+  width: 27px;
+  height: 22px;
+  right: 10px;
+  top: 10px;
+  transition: 0.3s;
+}
+
+.product:hover.product:after{
+  background-image: url(../image/redheart.png);
+} */
+
+.newname{
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.newname:hover{
+  cursor: pointer;  /* 수정 */
+  text-decoration: underline;
+}
+
+.newprice{
+  color: #777;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.page_number{margin-bottom: 30px;}
+.page_number button{
+  border: none;
+  margin-right: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #777;
+}
+.page_number button:first-child{cursor: default;}  /* 수정 */
+.page_number button:hover{
+  color: #000;
+  text-decoration: underline;
+}
+
+.page_number button:first-child{color: #777;}
+.page_number button:first-child:hover{text-decoration: none;}  /* 수정 */
+
+.page_number button:nth-child(2){
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+

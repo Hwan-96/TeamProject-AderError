@@ -1,0 +1,144 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+.wrap{
+  width:100%;
+  display: flex;
+  background:rgb(255, 255, 255);
+  position: relative;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* 메인 */
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 1px solid #000; */
+}
+
+.countdown{
+  max-width: 1145px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.countdown h2{font-weight: normal;}
+#timer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3em;
+  font-weight: 200;
+  color: #000;
+  width: 100%;
+  gap: 15px;
+}
+#timer div {
+  flex: 1;
+  display: inline-block;
+  padding: 25px 10px;
+  background: #fff;
+}
+#timer div span {
+  display: block;
+  font-size: .35em;
+  font-weight: 400;
+}
+
+.top20{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  /* border: 1px solid #000; */
+}
+
+.product{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin:auto;
+  position: relative;
+}
+
+.product img:first-child{
+  width: 100%;
+}
+.product img:last-child{  /* 하트 */
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 20px;
+}
+
+/* .product:after{
+  content: "";
+  z-index: 1;
+  position: absolute;
+  background-image: url(../image/fillheart.png);
+  background-size: 27px 22px;
+  width: 27px;
+  height: 22px;
+  right: 10px;
+  top: 10px;
+  transition: 0.3s;
+}
+
+.product:hover.product:after{
+  background-image: url(../image/redheart.png);
+} */
+
+.top20name{
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.top20name:hover{
+  cursor: pointer;  /* 수정 */
+  text-decoration: underline;
+}
+
+.top20price{
+  color: #777;
+  margin-top: 5px;
+  font-size: 13px;
+}
+.top20 .top5 .soldout{
+  color: red;
+  text-decoration: line-through;
+}
+
+
+.page_number{margin-bottom: 30px;}
+.page_number button{
+  border: none;
+  margin-right: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #777;
+}
+.page_number button:first-child{cursor: default;}  /* 수정 */
+.page_number button:hover{
+  color: #000;
+  text-decoration: underline;
+}
+
+.page_number button:first-child{color: #777;}
+.page_number button:first-child:hover{text-decoration: none;}  /* 수정 */
+
+.page_number button:nth-child(2){
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
