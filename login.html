@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+
+  <div class="vote">
+    <a href="http://web1004.pe.kr/vote.php" target="_blank">투표목록보기</a>
+  </div>
+
+  <div class="wrap">
+    <header>
+      <ul class="gnb">
+        <li class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </li>
+        <li class="logo"><a href="index.html"><img src="image/logo.svg" alt="아더에러"></a></li>
+        <ul class="r-gnb">
+          <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+        </ul>
+        <div class="mo-header">
+          <div class="moAll">
+            <ul class="mo-gnb">
+              <img class="moLogo" src="image/logo.svg" alt="">
+              <li class="moTitle">It'em</li>
+              <li><a href="new.html">New</a></li>
+              <li><a href="top20.html">Top 20</a></li>
+              <li class="moTitle">Product</li>
+              <li><a href="collection.html">Collection</a></li>
+              <li><a href="signi_slidetest.html">Significant</a></li>
+              <li><a href="aventory.html">A-Ventory</a></li>
+              <li><a href="gift.html">Gift</a></li>
+              <li><a href="collabo.html">Collaboration</a></li>
+              <li class="moTitle"><a href="gallery.html">Gallery</a></li>
+              <li class="moTitle"><a href="stockist.html">Stockist</a></li>
+            </ul>
+            <ul class="utillMenu">
+              <li><a href="login.html">My Page</a></li>
+              <li><a href="wishlist.html">Wish List</a></li>
+              <li class="switch">
+                <span class="btn-toggle"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+    </header>
+    
+
+  <section>
+    <div class="secAll">
+      <h1>Log In</h1>
+  
+        <div id="middleSec">
+          <div class="idpw">
+            <div class="id">
+              <p>ID</p>
+              <input type="text" id="id" placeholder=''>
+            </div>
+            <div class="pw">
+              <p>PW</p>
+              <input type="password" id="password" placeholder=''>
+            </div>
+          </div>
+        
+          <div class="checkboxes">
+            <div class="remember">
+              <input type="checkbox">
+              <p>Remember me</p>
+            </div>
+            <div class="forgot">
+              <p>Forgot Account?</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="clickboxes">
+          <div class="loginbox">
+            <button id="loginBtn">
+              로그인
+            </button>
+          </div>
+          <div class="joinbox">
+            <button id="joinBtn">회원가입</button>
+          </div>
+        </div>
+    </div>
+      
+    <div class="loginimage">
+      <img src="image/AderA.png" alt="">
+    </div>
+    </section>
+  </div>
+
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script>
+    const loginBtn = document.getElementById('loginBtn');
+    const joinBtn = document.getElementById('joinBtn');
+    loginBtn.addEventListener('click', (e)=>{
+      alert('죄송합니다 마이페이지가 준비중 입니다.');
+    });
+    joinBtn.addEventListener('click', (e)=>{
+      alert('죄송합니다 회원가입 페이지가 준비중 입니다.');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+@import url(common.css);
+@import url(vote.css);
+@import url(header.css);
+@import url(footer.css);
+
+.wrap{
+  width:100%;
+  display: flex;
+  background:rgb(255, 255, 255);
+  position: relative;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* 메인 */
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  /* border: 1px solid #000; */
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1145px;
+  width: 95%;
+	height: 100%;
+	margin: 40px auto;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+.banner .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner h2{
+  text-align: left;
+  font-weight: normal;
+}
+.banner .top a{transition: 0.3s;}
+.banner .top a:hover{text-decoration: underline;}
+.banner .ban{   /*슬라이드영역*/
+  height: 280px;
+	overflow:hidden;
+  position:relative;
+  margin-top: 10px;
+}
+.banner .ban ul{
+	display: flex;
+	position:absolute;
+  width: 500%;
+  height: 100%;
+  left: -190px;
+}
+.banner .ban ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right:20px;
+}
+.banner .ban ul li img{
+	width:170px;
+  object-fit: cover;
+}
+.ban ul li span{
+  margin-top: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.ban ul li span:hover{text-decoration: underline;}
+
+.collection{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  /* border: 1px solid #000; */
+}
+
+.product{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin:auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.product img:first-child{
+  width: 100%;
+  transition: 0.3s;
+}
+.product img:last-child{  /* 하트 */
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 20px;
+}
+
+.collectionname{
+  margin-top: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.collectionname:hover{
+  cursor: pointer;  /* 수정 */
+  text-decoration: underline;
+}
+
+.collectionprice{
+  color: #777;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.page_number{margin-bottom: 30px;}
+.page_number button{
+  border: none;
+  margin-right: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #777;
+}
+.page_number button:first-child{cursor: default;}  /* 수정 */
+.page_number button:hover{
+  color: #000;
+  text-decoration: underline;
+}
+
+.page_number button:first-child{color: #777;}
+.page_number button:first-child:hover{text-decoration: none;}  /* 수정 */
+
+.page_number button:nth-child(2){
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.product:hover img:first-child{
+  transform: scale(1.1);
+}

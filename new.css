@@ -1,0 +1,95 @@
+@import url(common.css);
+@import url(vote.css);
+@import url(header.css);
+@import url(footer.css);
+
+.wrap{
+  width:100%;
+  display: flex;
+  background:rgb(255, 255, 255);
+  position: relative;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* 메인 */
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fadeShow{
+  position: relative;
+}
+
+.changeimg{
+  padding-top:100px;
+}
+.changeimg ul{
+  display:flex;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.changeimg ul li img{width: 100vw;}
+
+.new{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.new1, .new2{
+  margin-top:30px;
+}
+
+.product{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin:auto;
+  position: relative;
+}
+
+.product img:first-child{
+  width: 100%;
+}
+.product img:last-child{  /* 하트 */
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 20px;
+}
+
+.newname{
+  font-size: 14px;
+  transition: 0.3s;
+  margin-top:10px;
+}
+
+.newname:hover{
+  cursor: pointer;  /* 수정 */
+  text-decoration: underline;
+}
+
+.newprice{
+  color: #777;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+
+
+
+.product{overflow:hidden;}
+.product:hover img:first-child{
+  transform: scale(1.1);
+}
+.product img:first-child{
+  width: 100%;
+  transition: 0.3s;
+}
+

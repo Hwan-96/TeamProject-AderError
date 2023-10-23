@@ -3,14 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>top20</title>
+  <title>ADERERROR | 아더에러 공식 온라인 스토어 | Top20</title>
   <link rel="stylesheet" href="css/top20.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
+
+  <div class="vote">
+    <a href="http://web1004.pe.kr/vote.php" target="_blank">투표목록보기</a>
+  </div>
+
     <div class="wrap">
       <header>
         <ul class="gnb">
@@ -21,15 +27,39 @@
           </li>
           <li class="logo"><a href="index.html"><img src="image/logo.svg" alt="아더에러"></a></li>
           <ul class="r-gnb">
-            <li><a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-            <li><a href="#none"><i class="fa-regular fa-user"></i></a></li>
+            <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
           </ul>
+          <div class="mo-header">
+            <div class="moAll">
+              <ul class="mo-gnb">
+                <img class="moLogo" src="image/logo.svg" alt="">
+                <li class="moTitle">It'em</li>
+                <li><a href="new.html">New</a></li>
+                <li><a href="top20.html">Top 20</a></li>
+                <li class="moTitle">Product</li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="signi_slidetest.html">Significant</a></li>
+                <li><a href="aventory.html">A-Ventory</a></li>
+                <li><a href="gift.html">Gift</a></li>
+                <li><a href="collabo.html">Collaboration</a></li>
+                <li class="moTitle"><a href="gallery.html">Gallery</a></li>
+                <li class="moTitle"><a href="stockist.html">Stockist</a></li>
+              </ul>
+              <ul class="utillMenu">
+                <li><a href="login.html">My Page</a></li>
+                <li><a href="wishlist.html">Wish List</a></li>
+                <li class="switch">
+                  <span class="btn-toggle"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </ul>
         <div class="nowPos">
-          <a href="index.html"><span class="material-symbols-outlined">arrow_back_ios</span><span>Top 20</span></a>
+          <a href="index.html"><span class="material-symbols-outlined">arrow_back_ios</span><span>Top20</span></a>
         </div>
       </header>
-
       <section>
 
         <div class="countdown">
@@ -40,25 +70,25 @@
         <div class="top20">
           <div class="top1">
             <div class="product">
-              <img src="image/top20-1-disto_logo_swearshirt.jpg" alt="">
+              <img class="detailPage" src="image/top20-1-disto_logo_swearshirt.jpg" alt="">
               <img src="image/heart.svg" alt="like item" data-alt="likeItem">
             </div>
-            <p class="top20name">Disto Logo Swearshirt</p>
-            <p class="top20price">279,000</p>
+            <p class="top20name detailPage">Disto Logo Swearshirt</p>
+            <p class="top20price detailPage">279,000</p>
           </div>
           
           <div class="top2">
             <div class="product">
-              <img src="image/top20-2-rawul_jumper.jpg" alt="">
+              <img class="detailPage2" src="image/top20-2-rawul_jumper.jpg" alt="">
               <img src="image/heart.svg" alt="like item" data-alt="likeItem">
             </div>
-            <p class="top20name">Rawul Jumper</p>
-            <p class="top20price">429,000</p>
+            <p class="top20name detailPage2">Rawul Jumper</p>
+            <p class="top20price detailPage2">429,000</p>
           </div>
         </div>
   
         <div class="top20">
-          <div class="top3">
+          <div class="top3 modal-product">
             <div class="product">
               <img src="image/top20-3-grampur_jumper.jpg" alt="">
               <img src="image/heart.svg" alt="like item" data-alt="likeItem">
@@ -67,7 +97,7 @@
             <p class="top20price">479,000</p>
           </div>
           
-          <div class="top4">
+          <div class="top4 modal-product">
             <div class="product">
               <img src="image/top20-4-tever_logo_hoodie.jpg" alt="">
               <img src="image/heart.svg" alt="like item" data-alt="likeItem">
@@ -78,7 +108,7 @@
         </div>
   
         <div class="top20">
-          <div class="top5">
+          <div class="top5 modal-product">
             <div class="product">
               <img src="image/top20-5-fluic_label_belt.jpg" alt="">
               <img src="image/heart.svg" alt="like item" data-alt="likeItem">
@@ -87,7 +117,7 @@
             <p class="top20price soldout">359,000</p>
           </div>
           
-          <div class="top6">
+          <div class="top6 modal-product">
             <div class="product">
               <img src="image/top20-6-caner_logo_hoodie.jpg" alt="">
               <img src="image/heart.svg" alt="like item" data-alt="likeItem">
@@ -98,7 +128,7 @@
         </div>
 
         <div class="top20">
-          <div class="top7">
+          <div class="top7 modal-product">
             <div class="product">
               <img src="image/top20-7-caner_logo_hoodie.jpg" alt="">
               <img src="image/heart.svg" alt="like item" data-alt="likeItem">
@@ -107,7 +137,7 @@
             <p class="top20price">329,000</p>
           </div>
           
-          <div class="top8">
+          <div class="top8 modal-product">
             <div class="product">
               <img src="image/top20-8-loci_knit.jpg" alt="">
               <img src="image/heart.svg" alt="like item" data-alt="likeItem">
@@ -118,7 +148,7 @@
         </div>
 
         <div class="top20">
-          <div class="top9">
+          <div class="top9 modal-product">
             <div class="product">
               <img src="image/top20-9-loci_knit.jpg" alt="">
               <img src="image/heart.svg" alt="like item" data-alt="likeItem">
@@ -127,7 +157,7 @@
             <p class="top20price">359,000</p>
           </div>
           
-          <div class="top10">
+          <div class="top10 modal-product">
             <div class="product">
               <img src="image/top20-10-owvit_shirt.jpg" alt="">
               <img src="image/heart.svg" alt="like item" data-alt="likeItem">
@@ -135,12 +165,6 @@
             <p class="top20name">Owvit Shirt</p>
             <p class="top20price">339,000</p>
           </div>
-        </div>
-        <div class="page_number">
-          <button class="prev">&#60;</button>
-          <button>1</button>
-          <button>2</button>
-          <button>&#62;</button>
         </div>
       </section>
 
@@ -189,9 +213,30 @@
       </footer>
     </div>
 
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="material-symbols-outlined">info</span>
+          <h6>상품을 준비중입니다.</h6>
+        </div>
+      </div>
+    </div>
+
 
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/top20.js"></script>
+    <script src="js/darkmode.js"></script>.
+    <script>
+      $(document).ready(function(){
+        $(".detailPage").click(function(){
+          $(location).attr("href", "detail_top1.html");
+        });
+        $(".detailPage2").click(function(){
+          $(location).attr("href", "detail_top2.html");
+        });
+      })
+    </script>
 </body>
 </html>

@@ -1,0 +1,139 @@
+.switch{
+  display: flex;
+  width: 4rem;
+  padding: .3rem;
+  border-radius: 50px;
+  background-color: #1c4e9f;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.btn-toggle{
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #ddd;
+  transition: 0.1s;
+}
+
+:root[data-theme='dark-mode'] {
+  --background-color: #1e1f21;
+  --text-color: rgb(245 245 244);
+  --text-color-R: #333;
+  --ddd-white : #ddd;
+  --invert : invert(100%);
+  --sortcolor : #eee;
+}
+
+:root[data-theme='light-mode'] {
+  --background-color: #fff;
+  --text-color: #333;
+  --text-color-R: rgb(245 245 244);
+  --ddd-white : #000;
+  --sortcolor : #fffbde51;
+}
+
+html{
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+[data-theme='dark-mode'] .switch{
+  background-color: #575757;
+}
+
+[data-theme='dark-mode'] .btn-toggle{
+  transform: translateX(33px);
+}
+
+.trigger span{
+  background-color: var(--ddd-white);
+}
+
+.gnb{
+  background-color: var(--background-color);
+  color: var(--ddd-white);
+}
+
+.logo img, .mo-gnb img{
+  filter: var(--invert);
+}
+
+.moAll{
+  background: var(--background-color);
+}
+
+.mo-header{
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+[data-theme='dark-mode'] .swiper-pagination-bullet{
+  background-color: var(--ddd-white);
+  opacity: 0.4;
+}
+
+[data-theme='dark-mode'] .swiper-pagination-bullet-active{
+  background-color: royalblue;
+  opacity: 1;
+}
+
+.section-sort-inner{
+  background-color: var(--background-color);
+}
+.section-sort-inner p b{
+  color: var(--ddd-white);
+}
+
+.accordion .fTitle{
+  background-color: var(--background-color);
+  color: var(--ddd-white);
+}
+.accordion .fContent{
+  color: var(--ddd-white);
+  background: var(--background-color);
+}
+
+/* Search */
+.keyword, .swiper-container{
+  color: var(--ddd-white);
+}
+
+/* Gallery */
+[data-theme='dark-mode'] .world{
+  background: #222;
+}
+[data-theme='dark-mode'] .containerWall_Right, [data-theme='dark-mode'] .containerWall_Left{
+  background: #333;
+}
+
+
+/* top20 */
+[data-theme='dark-mode'] section{
+  background: var(--background-color);
+}
+
+[data-theme='dark-mode'] #timer{
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+[data-theme='dark-mode'] .countdown{
+  border-bottom: 1px solid #555;
+}
+.page_number button{
+  color: var(--text-color);
+}
+.page_number button:nth-child(2){
+  color: var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+}
+
+/* Significant */
+.flow_banner{
+  background: var(--background-color);
+}
+
+/* Collaboration */
+main{
+  background: var(--background-color);
+}

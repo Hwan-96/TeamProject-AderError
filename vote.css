@@ -1,0 +1,20 @@
+.vote{
+  color: var(--background-color);
+  position: fixed;
+  padding: 3px 10px;
+  top: 62px;
+  right: 10px;
+  font-size: 0.7rem;
+  z-index: 8000;
+  border-radius: 50px;
+  background-color: var(--text-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.vote a{
+  display: inline-block;
+  margin-bottom: 3px;
+}

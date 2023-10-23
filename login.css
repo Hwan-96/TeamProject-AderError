@@ -1,0 +1,137 @@
+@import url(common.css);
+@import url(vote.css);
+@import url(header.css);
+
+*{box-sizing: border-box;}
+
+.wrap{
+  margin: auto;
+}
+
+section{
+  width:100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+.secAll{
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font-size: 39px;
+  width: 100%;
+}
+
+#middleSec{
+  margin: 50px auto;
+  width: 90%;
+}
+
+.idpw{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.idpw p {
+  font-weight: bold;
+}
+
+.id,.pw{
+  display: flex;
+  justify-content: space-between;
+}
+
+.id input, .pw input{
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  width: 87%;
+  background: transparent;
+  outline: none;
+  text-indent: 5px;
+  color: var(--text-color);
+  border-radius: 0;
+}
+
+.checkboxes{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 10px;
+  margin-top: 20px;
+}
+
+.remember{
+  display: flex;
+  gap: 5px;
+}
+
+.forgot{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.remember input{
+  cursor: pointer;
+}
+
+
+.clickboxes{
+  width: 100%;
+  display: grid;
+  gap: 10px;
+}
+
+.loginbox button{
+  width: 90%;
+  height: 50px;
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.loginbox button:hover{
+  background-color: rgb(35, 35, 35);
+}
+
+.joinbox button{
+  width: 90%;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.joinbox button:hover{
+  background-color: rgb(219, 219, 219);
+}
+
+.loginimage{
+  width: 100%;
+  height: 100px;
+  background-color: #0101C8;
+  z-index: -10;
+}
+
+.loginimage img{
+  width: 10%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: -10;
+  filter: invert(100%);
+}

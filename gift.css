@@ -1,0 +1,144 @@
+@import url(common.css);
+@import url(vote.css);
+@import url(header.css);
+@import url(footer.css);
+
+.wrap{
+  width:100%;
+  display: flex;
+  background:rgb(255, 255, 255);
+  position: relative;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* 메인 */
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+}
+.buyall{ /* Buy all */
+  font-weight: 300;
+  font-size: 13px;
+  margin: 15px 15px 10px 0px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  float:right;
+}
+.buyall:hover{
+  color: #777;
+}
+.gift{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  /* border: 1px solid #000; */
+}
+
+.moreGift1, .moreGift2{
+  display: none;
+}
+.moreGift1.active, .moreGift2.active{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+strong{
+  font-size:22px;
+  font-weight:600;
+  margin-bottom:15px;
+}
+.gift_more{
+  border: 1px solid #777;
+  color:#777;
+  padding:5px 20px;
+  margin-bottom:80px;
+}
+.gift_more:hover{
+  border:1px solid #333;
+  background-color:#333;
+  color:#fff;
+}
+.product{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  border: 1px solid #e0e0e0;
+  background-color:#fcfcfc;
+  margin:auto;
+  position: relative;
+  overflow: hidden;
+}
+.product img:first-child{
+  width: 100%;
+  transition: 0.3s;
+}
+.product img:last-child{
+  position: absolute;
+  height: 23px;
+  top: 5%;
+  right: 6%;
+}
+
+.product:hover img:first-child{
+  transform: scale(1.2);
+}
+
+
+.giftname{
+  margin-top:10px;
+  font-size: 16px;
+  transition: 0.3s;
+  font-weight:600;
+}
+.giftname:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.giftprice{
+  color: #777;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.buy{
+  width: 160px;
+  height: 33px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  margin-top: 10px;
+  line-height: 33px;
+}
+.buy:hover{
+  background-color: #333;
+}
+.page_number{margin-bottom: 30px;}
+.page_number button{
+  border: none;
+  margin-right: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #777;
+}
+.page_number button:hover{
+  color: #000;
+    text-decoration: underline;
+}
+.page_number button:first-child{color: #777;}
+.page_number button:first-child:hover{text-decoration: none;}
+
+.page_number button:nth-child(2){
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+

@@ -1,0 +1,166 @@
+@import url(common.css);
+@import url(vote.css);
+@import url(header.css);
+@import url(footer.css);
+
+.warp{
+  width:100%;
+  display: flex;
+  background:rgb(255, 255, 255);
+  position: relative;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* 메인 */
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.buyall{ /* Buy all */
+  font-weight: 300;
+  font-size: 13px;
+  margin: 15px 15px 10px 0px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  float:right;
+}
+
+.buyall:hover{
+  color: #777;
+}
+
+
+.signi{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  /* border: 1px solid #000; */
+}
+
+.product{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  /* border: 1px solid #000; */
+  margin:auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.product img:first-child{
+  width: 100%;
+  transition: 0.3s;
+}
+.product img:last-child{height: 20px;}
+
+.product img:last-child{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.signiname{
+  margin-top: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.signiname:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signiprice{
+  color: #777;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.buy{
+  width: 170px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  margin-top: 5px;
+  display: none; /* 구매하기버튼 안보이게 */
+}
+
+.buy:hover{
+  background-color: #333;
+}
+
+.page_number{
+  margin-bottom: 30px;
+}
+
+.page_number button{
+  border: none;
+  margin-right: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #777;
+}
+
+.page_number button:first-child{
+  cursor: default;
+}
+
+.page_number button:hover{
+  color: #000;
+  text-decoration: underline;
+}
+
+.page_number button:first-child{
+  color: #777;
+}
+.page_number button:first-child:hover{
+  text-decoration: none;
+}
+
+.page_number button:nth-child(2){
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+
+/* 슬라이드----------------- */
+
+.flow_banner {
+  overflow: hidden;
+  display: flex;
+  max-width: 100%;
+  padding-top: 100px;
+}
+.list img{
+  height: 200px;
+}
+.flow_banner .list {display: flex;}
+.flow_banner .list > li {
+  white-space: nowrap;
+  color: #000;
+}
+@keyframes flowRolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.product:hover img:first-child{
+  transform: scale(1.1);
+}

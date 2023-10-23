@@ -1,0 +1,76 @@
+@import url(common.css);
+
+#intro_wrap{
+  width:100vw;
+  height:100vh;
+  background-color:#0101C8;
+  display: none;
+}
+
+.intro{
+  width:100vw;
+  text-align: center;
+  height:inherit;
+  position: relative;
+}
+.logoBox{
+  position:absolute;
+  top:0%;
+  left:50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: topLogo 2s linear;
+  animation-fill-mode: forwards;
+}
+.logoBox img{
+  width:170px;
+}
+
+.intro p{
+  color:#fff;
+  font-size:22px;
+  position:absolute;
+  bottom:28%;
+  left:50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: bottomText 2s linear;
+  animation-fill-mode: forwards;
+}
+
+#intro_wrap .logo{
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: bottomLogo 2s linear;
+  animation-fill-mode: forwards;
+}
+
+#intro_wrap .logo img{
+  width: 200px;
+}
+
+@keyframes topLogo{
+  0%{opacity: 0;}
+  100%{
+    top: 20%;
+    opacity: 1;
+  }
+}
+
+@keyframes bottomLogo{
+  0%{opacity: 0;}
+  100%{
+    bottom: 20%;
+    opacity: 1;
+  }
+}
+
+@keyframes bottomText{
+  0%{opacity: 0;}
+  100%{
+    opacity: 1;
+  }
+}

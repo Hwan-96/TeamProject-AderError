@@ -1,0 +1,324 @@
+@import url(common.css);
+@import url(vote.css);
+@import url(header.css);
+@import url(footer.css);
+
+.warp{
+  width:100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* 메인 */
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
+
+.detail{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.product{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin:auto;
+  position: relative;
+}
+
+.product img:first-child{width: 100%;}
+.product img:last-child{height: 20px;}
+
+.product img:last-child{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.detailname{
+  margin-top: 15px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.detailprice{
+  color: #777;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.buy{
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.buy:hover{
+  background-color: #333;
+}
+
+.size_number{
+  display: flex;
+  margin-bottom: 30px;
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.size_number p {
+  color: #777;
+  margin-right: 25px;
+}
+
+.size_number button{
+  border: none;
+  margin-right: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #777;
+}
+
+.size_number input{
+  border: none;
+  margin-right: 7px;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--text-color);
+  width: 23px;
+  height: 23px;
+}
+.size_number input:last-child{margin-right: 0;}
+
+.size_number input:focus{
+  background-color: var(--text-color);
+  color: var(--text-color-R);
+  border-radius: 50px;
+  padding: 3px;
+}
+
+.size_number input:hover{
+  text-decoration: underline;
+}
+
+
+/* phoneCase - iPhone */
+.iPhoneBox{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.size_number input.iPhone{
+  width: 103px;
+  font-size: 0.75rem;
+  margin-right: 0;
+}
+.size{
+  grid-column: 1 / 3;
+  margin-left: 25px;
+}
+
+/* phoneCase - Galaxy */
+.size_number input.Galaxy{
+  width: 70px;
+  margin-top: 10px;
+}
+
+
+
+.wearing_area{
+  margin: 30px 0px;
+  text-align: center;
+}
+
+.wearing_area h3{
+  margin-bottom: 20px;
+}
+
+.wearing{
+  display: flex;
+  width: 100%;
+}
+
+.wearing img{
+  width: 33.3%;
+}
+
+
+.accordion .fTitle {
+  border: none;
+  border-top: 1px solid #ccc;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 10px 15px;
+  font-size: 13px;
+}
+
+.accordion .lastFt{border-bottom: 1px solid #ccc;}
+
+
+.accordion .fContent{
+  font-size: 13px;
+  line-height: 20px;
+  padding: 20px 10px;
+}
+
+.accordion .fContent img{
+  width: 100%;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+footer img{
+width: 50px;
+}
+
+.sizeImg{
+  width: 100%;
+  font-size: 0.5rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.size-menual{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 0.5rem;
+}
+
+.sizeImg table{
+  width: 100%;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.sizeImg table tr > *{
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  font-weight: 200;
+}
+
+.sizeImg table tr th{width: 20px;}
+.sizeImg table tr td{width: 15%;}
+
+
+
+/* 유림 class 추가 */
+
+/* detail_Aventory1 */
+.color_value{
+  display: flex;
+  margin-bottom: 30px;
+  font-size: 15px;
+  margin: 20px 0;
+}
+.color_value p {
+  color: #777;
+  margin-right: 25px;
+}
+.color_value button{
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.color_value input{
+  width:25px;
+  height:25px;
+  font-size:15px;
+  border:0;
+  border-radius: 0;
+  outline:none;
+  margin-right: 15px;
+  cursor: pointer;
+  background-color:blue;
+  transition: 0.3s;
+}
+.color_value input:last-child{
+  margin-right: 0;
+  background-color:black;
+}
+.color_value input:focus{
+  border-radius: 50%;
+}
+
+
+/* detail_Aventory2 */
+.color_value2{
+  display: flex;
+  margin-bottom: 30px;
+  font-size: 15px;
+  margin: 20px 0;
+}
+.color_value2 p {
+  color: #777;
+  margin-right: 25px;
+}
+.color_value2 button{
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.color_value2 input{
+  width:25px;
+  height:25px;
+  font-size:15px;
+  border:0;
+  border-radius: 0;
+  outline:none;
+  margin-right: 15px;
+  cursor: pointer;
+  background-color:grey;
+  transition: 0.35s;
+}
+.color_value2 input:nth-child(3){background-color:blue;}
+.color_value2 input:nth-child(4){background-color:black;}
+.color_value2 input:last-child{margin-right: 0;}
+.color_value2 input:focus{
+  border-radius: 50%;
+}
+
+
+
+/* detail_aventory 공통 */
+.fContent em{
+  margin:0 10px 0;
+}
+.fContent strong{
+  font-size:14px;
+}
+.detail_area{
+  margin: 30px 0px;
+  text-align: center;
+}
+.detail_area h3{
+  margin-bottom: 20px;
+}
+.detailshot{
+  display: flex;
+  width: 100%;
+}
+.detailshot img{
+  width: 33.3%;
+}
